@@ -13,17 +13,15 @@ public class Conversor {
         return mMillas;
     }
 
-    public void setmMillas(float mMillas) {
+    public void setMillas(float mMillas) {
         this.mMillas = mMillas;
     }
 
-    public float getmKm() {
+    public float getKm() {
         return mKm;
     }
 
-    public void Convertir(){
-        if(this.mMillas > 0){
-            this.mKm = this.mMillas * Float.parseFloat(String.valueOf(1.609));
-        }
+    public void convertir(){
+        this.mKm = this.mMillas * Float.parseFloat(String.valueOf(1.609));
     }
 }
